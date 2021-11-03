@@ -10,3 +10,9 @@ grep -rnw '/path/to/somewhere/' -e 'pattern'
 ```bash
 find . -name "*.ext" -print | xargs grep "something"
 ```
+
+* Find PID of process listening in a port
+```bash
+## e.g. port is 80
+lsof -n -i :80
+```
